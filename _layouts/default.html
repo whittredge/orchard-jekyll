@@ -12,6 +12,9 @@
 </head>
 
 <body>
+
+  	{% include header.html %}
+
 	<h1>Hello, world!</h1>
 
 	{{ content }}
@@ -20,5 +23,6 @@
 	<script src="{{'/node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
 	<script src="{{'/node_modules/popper.js/dist/popper.min.js' | prepend: site.baseurl}}"></script>
 	<script src="{{'/node_modules/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+	<script src="{{'/materialize-src/js/waves.js' | prepend: site.baseurl}}"></script>
 </body>
 </html>

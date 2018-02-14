@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand" href="/">
+      <span class="Great">Great</span> <span class="Solar">Solar</span>
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/solar-pv.html">Solar PV</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/commercial-systems.html">Commercial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/residential-systems.html">Residential</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/testimonials.html">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+<!--         <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+ -->        
+        <li class="nav-item">
+          {% include contact-link-and-modal.html %}
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav navbar-nav navbar-expand-sm navbar-right">
+      <a href="tel:{% include custom-or-default-phone.html %}">
+        <button type="button" class="btn btn-sm btn-outline-dark">
+          <img src="{{'/assets/feathericons/phone.svg' | prepend: site.baseurl}}">
+          {% include custom-or-default-phone.html %}
+        </button>
+      </a>
+    </div>
+  </div>
+</nav>
