@@ -16,16 +16,28 @@
       </div>
       <div class="modal-body">
         <p>
-          Feel free to call us anytime at <a href="tel:{% include custom-or-default-phone.html %}">{% include custom-or-default-phone.html %}</a>.
+          Feel free to call us anytime at <a href="#">1-800-999-1234.</a><!-- <a href="tel:{% include custom-or-default-phone.html %}">{% include custom-or-default-phone.html %}</a>. -->
         </p>
+        
+        <div class="container-fluid text-center">
+          <a href="tel:{% include custom-or-default-phone.html %}">
+            <button type="button" class="btn btn-success">
+              <img src="{{'/assets/feathericons/phone.svg' | prepend: site.baseurl}}">
+              Talk to a Live Person
+            </button>
+          </a>
+        </div>
       </div>
 
       <div class="modal-footer">
-        <p>
+        <div class="container-fluid">
           We'd love to hear from you.  Please fill out this form.
-        </p>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Submit</button>
+
+          {% include contact-form.html %}
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
       </div>
     </div>
   </div>
