@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light bg-transparent">
   <div class="container">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -11,8 +11,18 @@
     <div class="collapse navbar-collapse" id="navbarToggler">
 
       <ul class="navbar-nav ml-auto">
+        {% if page.url != '/' %}
         <li class="nav-item">
           <a class="nav-link" href="/">Home</a>
+        </li>
+        {% endif %}
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">How to Invest</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Projects</a>
         </li>
 
         <li class="nav-item">
