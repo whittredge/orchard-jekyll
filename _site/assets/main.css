@@ -6783,11 +6783,42 @@ h2 {
 h3 {
   color: #d7d9d7; }
 
-.logo {
-  font-family: "CaslonGraphiqueEF", "Superior Title Black", Georgia, serif;
-  font-size: 1.8rem;
-  color: #374037; }
+@media (min-width: 576px) {
+  .hidden-MD-LG-XL {
+    display: none; }
 
+  .HowToInvestButtonSmall {
+    display: none; }
+
+  .logo {
+    font-family: "CaslonGraphiqueEF", "Superior Title Black", Georgia, serif;
+    font-size: 1.8rem;
+    color: #374037; } }
+@media (max-width: 767.98px) {
+  .hidden-XS-SM {
+    display: none; }
+
+  .HowToInvestButton {
+    display: none; }
+
+  .HowToInvestButtonSmall {
+    display: flex; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .logo {
+    font-family: "CaslonGraphiqueEF", "Superior Title Black", Georgia, serif;
+    font-size: 1.5rem;
+    color: #374037; }
+
+  .nav {
+    font-size: 0.8rem; } }
+@media (max-width: 575.98px) {
+  .logo {
+    font-family: "CaslonGraphiqueEF", "Superior Title Black", Georgia, serif;
+    font-size: 1.3rem;
+    color: #374037; }
+
+  .nav {
+    font-size: 0.7rem; } }
 .display-1 {
   font-family: "CaslonGraphiqueEF", "Superior Title Black", Georgia, serif; }
 

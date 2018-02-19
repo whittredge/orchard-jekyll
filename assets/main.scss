@@ -4,6 +4,11 @@
 @import "variables";
 @import "bootstrap/scss/bootstrap";
 
+// Couldn't get this to work:
+// .btn {
+// 	@extend .waves-effect;
+// 	@extend .waves-light;
+// }
 
 h1 {
 	color: theme-color("custom-color");
@@ -17,10 +22,52 @@ h3 {
 	color: theme-color-level(custom-color, -10);
 }
 
-.logo {
-	font-family: "CaslonGraphiqueEF", "Superior Title Black", Georgia, serif;
-	font-size: 1.8rem;
-	color: theme-color("custom-color");
+@include media-breakpoint-up(sm) {
+	.hidden-MD-LG-XL {
+		display: none;
+	}
+	.HowToInvestButtonSmall {
+		display: none;
+	}
+	.logo {
+		font-family: "CaslonGraphiqueEF", "Superior Title Black", Georgia, serif;
+		font-size: 1.8rem;
+		color: theme-color("custom-color");
+	}
+	}
+
+@include media-breakpoint-down(sm) {
+	.hidden-XS-SM{
+		display: none;
+	}
+	.HowToInvestButton {
+		display: none;
+	}
+	.HowToInvestButtonSmall {
+		display: flex;
+	}
+}
+
+@include media-breakpoint-only(sm) {
+  .logo {
+  	font-family: "CaslonGraphiqueEF", "Superior Title Black", Georgia, serif;
+  	font-size: 1.5rem;
+  	color: theme-color("custom-color");
+  }
+  .nav {
+  	font-size: 0.8rem;
+  }
+}
+
+@include media-breakpoint-only(xs) {
+	.logo {
+		font-family: "CaslonGraphiqueEF", "Superior Title Black", Georgia, serif;
+		font-size: 1.3rem;
+		color: theme-color("custom-color");
+	}
+	.nav {
+		font-size: 0.7rem;
+	}
 }
 
 .display-1 {
