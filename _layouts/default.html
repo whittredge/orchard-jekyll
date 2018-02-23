@@ -13,7 +13,9 @@
 
   	{% include header.html %}
 
-	{{ content }}  		
+	{{ content }}
+
+	{% include footer.html %}
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="{{'/node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
