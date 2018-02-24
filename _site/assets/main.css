@@ -6914,6 +6914,18 @@ h3 {
 .card-title {
   font-family: "Lato", sans-serif; }
 
+.card-shadow {
+  border-top: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  border-bottom: none;
+  border-left: none;
+  box-shadow: -4px 0px 5px -2px #FFFFFF, -4px 2px 5px -2px #FFFFFF, -6px 9px 24px -3px #FFFFFF; }
+
+.card-shadow:hover {
+  border-top: 1px solid #ffc107;
+  border-right: 1px solid #ffc107;
+  box-shadow: -4px 0px 5px -2px #ffc107, -4px 2px 5px -2px #ffc107, -6px 9px 24px -3px #ffc107; }
+
 .secondary-block {
   background: #E8ECEC; }
 
